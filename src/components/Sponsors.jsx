@@ -5,7 +5,7 @@ import Typed from 'react-typed';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Sponsors = () => (
-  <section className={`${styles.paddings} relative`} id="Sponsors">
+  <section className={`${styles.paddings} relative`}>
     <div className="gradient-03 z-0" />
 
     <div className={`${styles.innerWidth} mx-auto flex flex-col z-10`}>

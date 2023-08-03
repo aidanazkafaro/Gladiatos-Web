@@ -1,5 +1,5 @@
-import React from 'react';
-import articlesData from '../assets/articles/articles.json';
+import React, { useEffect } from 'react';
+import articles from '../assets/articles/articles';
 import Navbar from '../components/Navbar';
 import Sponsors from '../components/Sponsors';
 import Footer from '../components/Footer';
@@ -8,6 +8,9 @@ import ArticlePreview from '../components/ArticlePreview';
 import Typed from 'react-typed';
 
 const ArticleList = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="bg-primary-black overflow-hidden">
       <Navbar />
@@ -28,7 +31,7 @@ const ArticleList = () => {
           Some of Our Stories
         </h2>
         <div className={`${styles.yPaddings} ${styles.xPaddings}`}>
-          {articlesData.map((article) => (
+          {articles.map((article) => (
             <ArticlePreview key={article.id} article={article} />
           ))}
         </div>

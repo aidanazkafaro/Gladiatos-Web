@@ -11,11 +11,13 @@ import Footer from '../components/Footer';
 
 const PageMain = () => {
   useEffect(() => {
+    window.scrollTo(0, 0);
+
     const wow = new WOW({ live: false }); // disables sync requirement
     wow.init();
   }, []);
   return (
-    <div className="bg-primary-black overflow-hidden">
+    <div className="bg-primary-black overflow-hidden overflow">
       <Navbar />
       <Hero />
       <About />

@@ -7,6 +7,7 @@ import Footer from '../components/Footer';
 
 const TeamPage = () => {
   useEffect(() => {
+    window.scrollTo(0, 0);
     const wow = new WOW({ live: false }); // disables sync requirement
     wow.init();
   }, []);

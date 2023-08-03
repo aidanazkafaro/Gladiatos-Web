@@ -29,7 +29,7 @@ const TeamStructure = () => {
   // }, []);
 
   return (
-    <section className={`${styles.paddings} mt-10 relative`} id="TeamStructure">
+    <section className={`${styles.paddings} mt-10 relative`}>
       <div className="gradient-04 z-0" />
 
       <div className={`${styles.innerWidth} mx-auto flex flex-col z-10`}>

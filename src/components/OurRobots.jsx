@@ -6,7 +6,7 @@ import styles from '../styles';
 let delay = 0.8;
 
 const OurRobots = () => (
-  <section className={`${styles.paddings} relative`} id="OurRobots">
+  <section className={`${styles.paddings} relative`}>
     <div className="gradient-05 z-0" />
 
     <div className={`${styles.innerWidth} mx-auto flex flex-col z-10`}>

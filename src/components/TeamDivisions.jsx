@@ -11,7 +11,7 @@ const TeamDivision = () => {
     setActive('team-programming');
   }, []);
   return (
-    <section className={`${styles.paddings} relative`} id="TeamDivision">
+    <section className={`${styles.paddings} relative`}>
       <div className="gradient-03 z-0" />
 
       <div className={`${styles.innerWidth} mx-auto flex flex-col z-10`}>

@@ -6,7 +6,7 @@ import instagram from '../assets/instagram.png';
 import whatsapp from '../assets/whatsapp.png';
 
 const ContactUs = () => (
-  <section className={`${styles.paddings} relative`} id="TeamStructure">
+  <section className={`${styles.paddings} relative`}>
     <div className="gradient-04 z-0" />
 
     <div className={`${styles.innerWidth} mx-auto flex flex-col z-10`}>

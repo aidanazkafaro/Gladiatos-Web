@@ -7,12 +7,11 @@ import menu from '../assets/menu.svg';
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
-  useEffect(() => {
-    setNavbarOpen(false);
-  }, []);
   const [navbarBg, setNavbarBg] = useState(false);
 
   useEffect(() => {
+    setNavbarOpen(false);
+
     const handleScroll = () => {
       const isScrolled = window.scrollY > 0;
       setNavbarBg(isScrolled);
@@ -78,23 +77,14 @@ const Navbar = () => {
         >
           <ul className="items-center justify-end space-y-8 md:flex md:space-x-6 md:space-y-0">
             <li className="text-white cursor-pointer">
-              <RouterLink
-                to="/"
-                activeClass="active"
-                spy
-                smooth
-                offset={0}
-                duration={500}
-              >
-                Home
-              </RouterLink>
+              <RouterLink to="/">Home</RouterLink>
             </li>
             <li className="text-white cursor-pointer">
               <RouterLink to="/team">Team Structure</RouterLink>
             </li>
 
             <li className="text-white cursor-pointer">
-              <RouterLink to={`/articles`}>Articles</RouterLink>
+              <RouterLink to="/articles">Articles</RouterLink>
             </li>
           </ul>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Link, useParams } from 'react-router-dom';
-import articlesData from '../assets/articles/articles.json';
+import articles from '../assets/articles/articles';
 import Navbar from './Navbar';
 import Sponsors from './Sponsors';
 import Footer from './Footer';
@@ -9,7 +9,7 @@ import fotoSanadhi from '../assets/sanadhi-sutandi.jpg';
 
 const Article = () => {
   const { id } = useParams();
-  const article = articlesData.find((article) => article.id === parseInt(id));
+  const article = articles.find((article) => article.id === parseInt(id));
 
   const createMarkup = () => {
     return { __html: article.content };
@@ -41,7 +41,7 @@ const Article = () => {
           </p>
           <img
             className="mx-auto mt-4 mb-8 md:w-2/3"
-            src={fotoSanadhi}
+            src={article.imgUrl}
             alt="Author"
           />
           <p

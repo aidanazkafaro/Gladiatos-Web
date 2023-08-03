@@ -1,17 +1,11 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-// import { TypingText } from '../components/CustomTexts';
 import styles from '../styles';
 import logoPlain from '../assets/gladiatos-logo-hero-no-text.png';
 import Typed from 'react-typed';
-// import {
-//   staggerContainer,
-//   textVariant,
-//   fadeIn,
-// } from '../utils/motion';
 
 const Hero = () => (
-  <section className={`${styles.paddings} mt-14`} id="hero">
+  <section className={`${styles.paddings} mt-14`}>
     <div className="absolute left- w-[10%] h-[20%] inset-0 gradient-01 z-10" />
 
     <div className={`${styles.innerWidth} mx-auto flex flex-col`}>
